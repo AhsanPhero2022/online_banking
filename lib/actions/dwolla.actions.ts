@@ -70,14 +70,6 @@ export const createTransfer = async ({
 }: TransferParams) => {
   try {
     const requestBody = {
-      _links: {
-        source: {
-          href: sourceFundingSourceUrl,
-        },
-        destination: {
-          href: destinationFundingSourceUrl,
-        },
-      },
       amount: {
         currency: "USD",
         value: amount,
